@@ -1,9 +1,9 @@
 import React from "react";
-import ".css/Traduction.css";
-import "../APIs/API_Langues";
-
+import "../contents/css/Traduction.css";
+import "../APIs/API_Traduction";
 
 export default class Traduction extends React.Component{
+
     Traduire(){
 
         var url = "https://api-free.deepl.com/v2/translate";
@@ -33,21 +33,26 @@ export default class Traduction extends React.Component{
         xhr.send(data);
 
     }
+
     render(){
         return(
-            
-            <div className="Box">
-                <div className="Info_box">
-                    <p>Traduire en :</p>
-                    <form name="form1" method="post" action="">
-                        <select id="SelectLangue" ></select>
-                    </form>
-                    <p>Votre texte :</p>
-                    <textarea id="TexteTrad" name="TexteTrad" rows="5" cols="22"></textarea>
-                    <button id ="Bouton" onClick={this.Traduire}>Traduire</button>
-                    <p>Traduction : <span  id="traduction"></span></p>
+            <div className="Box6">
+                <div className="BoxTraduction">
+                    <div className="colonne">
+                        <p>Traduire en :</p>
+                        <form name="form1" method="post" action="">
+                            <select id="SelectLangue" ></select>
+                        </form>
+                        <p>Votre texte :</p>
+                        <textarea id="TexteTrad" name="TexteTrad" rows="5" cols="22"></textarea>
+                        <button id ="Bouton" onClick={this.Traduire}>Traduire</button>
+                    </div>
+                    <div className="colonne">
+                        <p>Traduction : <span  id="traduction"></span></p>
+                    </div>
                 </div>
             </div>
         )
     }
+
 }

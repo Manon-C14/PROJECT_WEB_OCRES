@@ -1,4 +1,3 @@
-//var SelectLangue = document.getElementById('SelectLangue');
 
 
 var url = "https://api-free.deepl.com/v2/languages";
