@@ -1,6 +1,6 @@
 import React from "react";
-import "./Traduction.css";
-import "./APIs/API_Langues";
+import ".css/Traduction.css";
+import "../APIs/API_Langues";
 
 
 export default class Traduction extends React.Component{
