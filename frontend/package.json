@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "deepl": "^1.0.13",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^3.2.0",
+    "xhr2": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
