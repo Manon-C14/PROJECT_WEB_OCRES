@@ -1,44 +1,33 @@
-<<<<<<< HEAD
 .Box6{
     width: 40%;
     height: 100%;
     margin-left: 2%;
     border: 1px solid black;
-}
-=======
-.Box{
-    width: 20%;
-    height: 600px;
-    margin-left: 2%;
-    margin-top: 2%;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
 }
 
-
-.Info_box{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 30px;
+.BoxTraduction{
+    width: 94%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.Info_box select{
+.BoxTraduction select{
     width: 100%;
 }
 
-.Info_box p{
-    margin-top: 20px;
+.BoxTraduction p{
     font-weight: bold;
 }
 
-.Info_box p span{
+.BoxTraduction p span{
     font-weight: lighter;
 }
 
-textarea{
-    margin-top: 10px;
-}
 
-button{
-    margin-top: 20px;
+.colonne{
+    width: 45%;
 }
->>>>>>> Faustine

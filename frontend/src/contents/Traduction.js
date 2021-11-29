@@ -1,13 +1,5 @@
 import React from "react";
 import "../contents/css/Traduction.css";
-<<<<<<< HEAD
-
-export default class Traduction extends React.Component{
-    render(){
-        return(
-            <div className="Box6">
-
-=======
 import "../APIs/API_Traduction";
 
 export default class Traduction extends React.Component{
@@ -59,7 +51,6 @@ export default class Traduction extends React.Component{
                         <p>Traduction : <span  id="traduction"></span></p>
                     </div>
                 </div>
->>>>>>> Faustine
             </div>
         )
     }
