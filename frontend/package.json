@@ -10,7 +10,8 @@
     "react-google-maps": "^9.4.5",
     "react-scripts": "^4.0.3",
     "react-vis": "^1.11.7",
-    "recharts": "^2.1.6"
+    "recharts": "^2.1.6",
+    "xhr2": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

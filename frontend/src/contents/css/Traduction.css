@@ -3,4 +3,31 @@
     height: 100%;
     margin-left: 2%;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.BoxTraduction{
+    width: 94%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BoxTraduction select{
+    width: 100%;
+}
+
+.BoxTraduction p{
+    font-weight: bold;
+}
+
+.BoxTraduction p span{
+    font-weight: lighter;
+}
+
+
+.colonne{
+    width: 45%;
 }
