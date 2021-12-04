@@ -5,7 +5,7 @@ import {
     GoogleMap,
     Marker,
   } from "react-google-maps";
-import SearchBox from "react-google-maps/lib/components/places/SearchBox";
+//import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 
 //API Maps Javascript
 //const API_URL = "https://maps.googleapis.com/maps/api/js";
@@ -29,7 +29,7 @@ class API_Geocode{
             ville = "Paris";
         }
         this.ville = ville;
-        console.log("ville : " + ville)
+        console.log("villeMap : " + ville)
     }
 
     fetchLongLat(){
