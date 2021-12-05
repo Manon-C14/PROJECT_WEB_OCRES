@@ -6,14 +6,16 @@ export default class Navbar extends React.Component{
     render(){
         return(
             <header>
-                <div className="logo">
-                    Logo
+                <div className="Logo">
+                    <p>
+                        Voyages
+                    </p>
                 </div>
-                <div className="navigation">
-                    <button className="active">
+                <div className="Navigation">
+                    <button className="Bouton1 Active">
                         Mon dashboard
                     </button>
-                    <button>
+                    <button className="Bouton2">
                         Mon API
                     </button>
                 </div>

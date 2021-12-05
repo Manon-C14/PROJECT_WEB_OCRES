@@ -231,8 +231,6 @@ export default class Example extends React.Component {
             </button>
             <FlexibleXYPlot className="Graphe"
                 xType="ordinal"
-                //width={360}
-                //height={200}
                 //yDomain={[yDom.min-3, yDom.max+3]}
             >
                 <VerticalBarSeries className="vertical-bar-series-example" data={myDATA} />

@@ -44,7 +44,7 @@ export default class Traduction extends React.Component{
                             <select id="SelectLangue" ></select>
                         </form>
                         <p>Votre texte :</p>
-                        <textarea id="TexteTrad" name="TexteTrad" rows="5" cols="22"></textarea>
+                        <textarea id="TexteTrad" className="TexteTrad" name="TexteTrad" rows="5" cols="22"></textarea>
                         <button id ="Bouton" onClick={this.Traduire}>Traduire</button>
                     </div>
                     <div className="colonne">

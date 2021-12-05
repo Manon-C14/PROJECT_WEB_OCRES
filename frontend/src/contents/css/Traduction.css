@@ -9,25 +9,34 @@
 
 .BoxTraduction{
     width: 94%;
+    height: 100%;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-.BoxTraduction select{
-    width: 100%;
+.colonne{
+    width: 45%;
+    height: 100%;
 }
 
 .BoxTraduction p{
     font-weight: bold;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.BoxTraduction select{
+    width: 100%;
+}
+
+.BoxTraduction .TexteTrad{
+    width: 100%;
+    height: 40%;
 }
 
 .BoxTraduction p span{
     font-weight: lighter;
 }
 
-
-.colonne{
-    width: 45%;
-}
