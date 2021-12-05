@@ -21,7 +21,7 @@
     width: 80%;
     height: 60%;
     margin-left: 10%;
-    margin-top: 30px;
+    margin-top: 8%;
 }
 
 .Info_box select{
@@ -29,8 +29,9 @@
 }
 
 .Info_box p{
-    margin-top: 20px;
+    margin-top: 10%;
     font-weight: bold;
+    font-size: 1em;
 }
 
 .Info_box p span{
