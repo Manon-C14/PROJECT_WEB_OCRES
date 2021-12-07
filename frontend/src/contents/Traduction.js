@@ -41,6 +41,7 @@ export default class Traduction extends React.Component{
                     <div className="colonne">
                         <p>Traduire en :</p>
                         <form name="form1" method="post" action="">
+                            
                             <select id="SelectLangue" ></select>
                         </form>
                         <p>Votre texte :</p>

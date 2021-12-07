@@ -1,6 +1,16 @@
 .Box3{
-    width: 22%;
+    width: 139%;
     height: 100%;
-    margin-left: 2%;
+    margin-left: 10%;
     border: 1px solid black;
+}
+
+.Box3 p{
+    margin-left: 10%;
+}
+
+.Box3 h5{
+    margin-top: 3%;
+    margin-left: 10%;
+
 }
