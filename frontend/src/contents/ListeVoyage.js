@@ -80,7 +80,8 @@ const VoyagesList = props => {
 
     const deleteVoyage = (voyageId) => {
         fetch('http://localhost:5000/api/v1/voyages/newVoy?id=' + voyageId, { method: 'DELETE' })
-            ;
+            
+        window.location.reload()
     };
 
     return (
@@ -88,7 +89,7 @@ const VoyagesList = props => {
             <div className="row pb-1">
 
                 <div className="input-group col-lg-4">
-                <input
+                    <input
                         type="text"
                         className="form-control"
                         placeholder="Chercher par pays"
@@ -120,9 +121,14 @@ const VoyagesList = props => {
                             Search
                         </button>
                     </div>
+
+                    <Link to={"/ajout"} className="btn btn-outline-dark justify-content-center ">
+                        Ajouter un voyage
+                    </Link>
                     <Link to={"/modif"} className="btn btn-outline-dark justify-content-center ">
                         Modifier un voyage
                     </Link>
+
 
                 </div>
 
@@ -142,7 +148,9 @@ const VoyagesList = props => {
                                     </p>
                                     <div className="row">
 
-                                        <a onClick={() => deleteVoyage(voyage._id)} className="btn btn-primary col-lg-5 mx-1 mb-1">Supprimer Voyage</a>
+                                        <Link to={"/voyages"} onClick={() => deleteVoyage(voyage._id)} className="btn btn-primary col-lg-5 mx-1 mb-1 ">
+                                            Supprimer le voyage
+                                        </Link>
                                     </div >
 
 

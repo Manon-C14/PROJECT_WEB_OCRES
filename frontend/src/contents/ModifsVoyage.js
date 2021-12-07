@@ -135,7 +135,9 @@ const Voyage = props => {
                                             onChange={onChangeRaison}
                                         />
                                     </div>
-                                    <a onClick={() => modifyVoyage(voyage._id, paysValue, dateAValue, dateRValue, raisonValue)} className="btn btn-primary ">Modifier Voyage</a>
+                                    <Link to={"/voyages"} onClick={() => modifyVoyage(voyage._id, paysValue, dateAValue, dateRValue, raisonValue)} className="btn btn-primary ">
+                                        Modifier le voyage
+                                    </Link>
                                 </div>
                             </div>
                         </div>

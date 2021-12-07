@@ -2,9 +2,10 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import AjoutVoyage from "./contents/ListeVoyage";
+import Voyage from "./contents/ListeVoyage";
 import Dashboard from "./Dashboard";
-import Voyage from "./contents/ModifsVoyage";
+import ModifVoyage from "./contents/ModifsVoyage";
+import AjoutVoyage from "./contents/AjoutVoyage"
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           Mon Dashboard
         </a>
         <div className="navbar-nav mr-auto">
-          
+
           <li className="nav-item" >
             <Link to={"/voyages"} className="nav-link">
               Mon API
@@ -32,20 +33,24 @@ function App() {
           <Route
             path="/voyages"
             render={(props) => (
+              <Voyage {...props} />
+            )}
+          />
+
+          <Route
+            path="/modif"
+            render={(props) => (
+              <ModifVoyage {...props} />
+            )}
+          />
+          <Route
+            path="/ajout"
+            render={(props) => (
               <AjoutVoyage {...props} />
             )}
           />
-          <div className="container mt-3">
-                <Switch>
-                    <Route
-                        path="/modif"
-                        render={(props) => (
-                            <Voyage {...props} />
-                        )}
-                    />
 
-                </Switch>
-            </div>
+
         </Switch>
       </div>
     </div>

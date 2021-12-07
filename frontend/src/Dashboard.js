@@ -6,6 +6,7 @@ import MesPays from "./contents/MesPays";
 import Heure from "./contents/Heure";
 import Meteo from "./contents/Meteo";
 import Traduction from "./contents/Traduction";
+
 /*import { text } from "./stories/1-Button.stories";
 
 const Text1 = text;*/   
