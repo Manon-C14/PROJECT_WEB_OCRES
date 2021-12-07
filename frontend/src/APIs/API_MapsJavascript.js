@@ -4,7 +4,12 @@ import {
     withGoogleMap,
     GoogleMap,
     Marker,
-  } from "react-google-maps";
+    InfoWindow,
+    Places
+} from "react-google-maps";
+import { Loader } from "@googlemaps/js-api-loader";
+
+
 //import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 
 //API Maps Javascript
@@ -66,6 +71,8 @@ class API_Geocode{
         )
     }
 }*/
+
+
 
 
 class API_MapsJavascript extends React.Component{

@@ -9,14 +9,15 @@ export default class PaysPlusVisites extends React.Component{
             <div className="Box2">
                 <div id="map_area">
                     <API_MapsJavascript/>
-                    <div className="Input">
-                        <input id="input" type="text" placeholder="Paris"/>
-                        <button id="input-button" type="submit" onClick={start}>Actualiser</button>
-                    </div>
-                    
                 </div>
             </div>
         )
     }
 
 }
+/*
+<div className="Input">
+    <input id="input" type="text" placeholder="Paris"/>
+    <button id="input-button" type="submit" onClick={start}>Actualiser</button>
+</div>
+*/

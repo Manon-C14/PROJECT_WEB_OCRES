@@ -186,6 +186,7 @@ async function updateData(){
     myDATA[10].y = await getTempNovembre();
     myDATA[11].y = await getTempDecembre();
 
+
     return myDATA;
 }
 
