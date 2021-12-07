@@ -41,13 +41,13 @@ export default class VoyagesController {
         try {
             const pays = req.body.Pays
             const dateArrivee = new Date(req.body.DateArrivee)
-            const dateDepart = new Date (req.body.DateDepart)
+            const dateRetour = new Date (req.body.DateRetour)
             const raison = req.body.Raison
 
             const VoyageResponse = await VoyagesDAO.addVoyage(
                 pays,
                 dateArrivee,
-                dateDepart,
+                dateRetour,
                 raison,
             )
             res.json({ status: "success" })
@@ -61,7 +61,7 @@ export default class VoyagesController {
             const voyageId = req.body.voyage_id
             const pays = req.body.Pays
             const dateArrivee = new Date(req.body.DateArrivee)
-            const dateRetour = new Date(req.body.DateDepart)
+            const dateRetour = new Date(req.body.DateRetour)
             const raison = req.body.Raison
 
             const voyageResponse = await VoyagesDAO.updateVoyage(

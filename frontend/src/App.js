@@ -20,7 +20,7 @@ function App() {
 
           <li className="nav-item" >
             <Link to={"/voyages"} className="nav-link">
-              Mon API
+              Mes Voyages
             </Link>
 
           </li>
