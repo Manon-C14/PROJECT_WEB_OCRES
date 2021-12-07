@@ -1,6 +1,5 @@
 import React from "react";
 import "./Dashboard.css";
-import Navbar from "./Navbar";
 import InfoPays from "./contents/InfosPays";
 import PaysPlusVisites from "./contents/PaysPlusVisites";
 import MesPays from "./contents/MesPays";
@@ -16,7 +15,7 @@ export default class Dashboard extends React.Component{
     render(){
         return(
             <div className="Main">
-                <Navbar />
+                
                 <div className="Content">
                     <div className="SidebarLeft">
                         <InfoPays />

@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function(){
     const listePays = document.getElementById("listePays");
     let pays;
 
-    listePays.addEventListener("change", choixPays);
+    if (listePays)
+    {
+            listePays.addEventListener("change", choixPays);
+
+    }
  
     function choixPays(event){
         afficherInfosPays(event.target.value);

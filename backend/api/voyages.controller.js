@@ -60,8 +60,8 @@ export default class VoyagesController {
         try {
             const voyageId = req.body.voyage_id
             const pays = req.body.Pays
-            const dateArrivee = new Date()
-            const dateRetour = new Date()
+            const dateArrivee = new Date(req.body.DateArrivee)
+            const dateRetour = new Date(req.body.DateDepart)
             const raison = req.body.Raison
 
             const voyageResponse = await VoyagesDAO.updateVoyage(

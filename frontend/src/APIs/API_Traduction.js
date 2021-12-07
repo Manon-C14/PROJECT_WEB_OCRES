@@ -16,6 +16,7 @@ xhr.onreadystatechange = function () {
             var opt = document.createElement('option');
             opt.value = object.language;
             opt.innerHTML = object.name;
+            
             document.getElementById('SelectLangue').appendChild(opt);
             
       });
